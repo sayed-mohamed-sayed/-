@@ -35,7 +35,7 @@ const effecttotall= useEffect(()=>{
       catergoy,
     };
     try {
-        await axios.put(`${domin}/productid/${items._id}` ,item)
+        await axios.put(`/api/productid/${items._id}` ,item)
         alert("تــــــــــــــــم")
         router.push("/products/posts")
       

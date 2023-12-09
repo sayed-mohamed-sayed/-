@@ -53,9 +53,9 @@ export default function Input() {
       count,
       catergoy,
     };
-    router.push("/products/posts");
     try {
-      await axios.post(`${domin}/contasting`, post);
+      await axios.post(`/api/contasting`, post);
+      router.push("/products/posts");
     } catch (error) {
       console.log(error);
     }
