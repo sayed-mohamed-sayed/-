@@ -1,0 +1,60 @@
+.form{
+    background-color: cornflowerblue;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.form input{
+    border: noone;
+    border:  solid 1px black;
+    outline: none;
+    border-radius: 7px;
+    width: 300px;
+}
+
+.form button{
+    border:  solid 1px black;
+    outline: none;
+    border-radius: 7px;
+width: 100px;
+margin: 10px;
+}
+.form label{
+    width: 200px;
+}
+
+.kl ul{
+background-color: cadetblue;
+color:white;
+display: flex;
+justify-content: center;
+text-align: center;
+
+}
+.kl a{
+    background-color: cornflowerblue;
+    margin: 30px;
+    padding: 10px;
+    
+}
+
+.op{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    border: solid 1px black;
+
+}
+.op button{
+
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+}
