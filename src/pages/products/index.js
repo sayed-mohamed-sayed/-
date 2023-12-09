@@ -24,24 +24,24 @@ export default function Input() {
   //   setcount(sum);
   // };
 
-  const total = () => {
-    const parsedPrice = parseInt(price);
-    const parsedTaxes = parseInt(taxes);
-    const parsedAds = parseInt(ads);
-    const parsedDiscount = parseInt(discount);
+  useEffect(() => {
+    const total = () => {
+      const parsedPrice = parseInt(price);
+      const parsedTaxes = parseInt(taxes);
+      const parsedAds = parseInt(ads);
+      const parsedDiscount = parseInt(discount);
+    
+      const sum =
+        (isNaN(parsedPrice) ? 0 : parsedPrice) +
+        (isNaN(parsedTaxes) ? 0 : parsedTaxes) +
+        (isNaN(parsedAds) ? 0 : parsedAds) -
+        (isNaN(parsedDiscount) ? 0 : parsedDiscount);
+    
+      setcount(sum);
+    };
   
-    const sum =
-      (isNaN(parsedPrice) ? 0 : parsedPrice) +
-      (isNaN(parsedTaxes) ? 0 : parsedTaxes) +
-      (isNaN(parsedAds) ? 0 : parsedAds) -
-      (isNaN(parsedDiscount) ? 0 : parsedDiscount);
-  
-    setcount(sum);
-  };
-// useEffect(() => {
-//     total();
-//   }, [price, taxes, ads, discount]);
-
+    total();
+  }, [price, taxes, ads, discount]);
   async function addpost(e) {
     e.preventDefault();
     const post = {
