@@ -38,10 +38,9 @@ export default function Input() {
   
     setcount(sum);
   };
-  
-// useEffect(() => {
-//     total();
-//   }, [price, taxes, ads, discount]);
+useEffect(() => {
+    total();
+  }, [price, taxes, ads, discount,total]);
 
   async function addpost(e) {
     e.preventDefault();

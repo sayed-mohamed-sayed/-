@@ -19,10 +19,7 @@ const total=()=>{
 
   setcount(sum)
 }
-const effecttotall= useEffect(()=>{
-  total()
-},[price, taxes, ads, discount])
-
+ 
   async function updateitem(e) {
     e.preventDefault()
     const item= {
