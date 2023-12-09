@@ -24,24 +24,24 @@ export default function Input() {
   //   setcount(sum);
   // };
 
-  useEffect(() => {
-    const total = () => {
-      const parsedPrice = parseInt(price);
-      const parsedTaxes = parseInt(taxes);
-      const parsedAds = parseInt(ads);
-      const parsedDiscount = parseInt(discount);
+  // useEffect(() => {
+  //   const total = () => {
+  //     const parsedPrice = parseInt(price);
+  //     const parsedTaxes = parseInt(taxes);
+  //     const parsedAds = parseInt(ads);
+  //     const parsedDiscount = parseInt(discount);
     
-      const sum =
-        (isNaN(parsedPrice) ? 0 : parsedPrice) +
-        (isNaN(parsedTaxes) ? 0 : parsedTaxes) +
-        (isNaN(parsedAds) ? 0 : parsedAds) -
-        (isNaN(parsedDiscount) ? 0 : parsedDiscount);
+  //     const sum =
+  //       (isNaN(parsedPrice) ? 0 : parsedPrice) +
+  //       (isNaN(parsedTaxes) ? 0 : parsedTaxes) +
+  //       (isNaN(parsedAds) ? 0 : parsedAds) -
+  //       (isNaN(parsedDiscount) ? 0 : parsedDiscount);
     
-      setcount(sum);
-    };
+  //     setcount(sum);
+  //   };
   
-    total();
-  }, [price, taxes, ads, discount]);
+  //   total();
+  // }, [price, taxes, ads, discount]);
   async function addpost(e) {
     e.preventDefault();
     const post = {
@@ -125,16 +125,16 @@ export default function Input() {
                     placeholder="discount"
                   />
 
-                  <small id="totall">&nbsp; :{count ? count : "00"}</small>
+                  {/* <small id="totall">&nbsp; :{count ? count : "00"}</small> */}
                 </div>
-                <input
+                {/* <input
                   type="number"
                   name="count"
                   id="count"
                   value={count}
                   onChange={(e) => setcount(totall)}
                   placeholder="count"
-                />
+                /> */}
 
                 <input
                   type="text"
