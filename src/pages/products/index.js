@@ -38,7 +38,8 @@ export default function Input() {
   
     setcount(sum);
   };
-  const effecttotall = useEffect(() => {
+  
+useEffect(() => {
     total();
   }, [price, taxes, ads, discount]);
 
